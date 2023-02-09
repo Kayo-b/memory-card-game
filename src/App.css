@@ -1,9 +1,25 @@
 * {
   margin: 0px;
 }
+
 .App {
   text-align: center;
 }
+
+body {
+  background-color: rgb(79, 69, 85);
+  
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: rgb(51, 22, 60);
+  border: 2px solid blue;
+}
+
 
 .appHeader {
   display: flex;
@@ -11,6 +27,7 @@
   justify-content: center;
   padding: 5px;
   border: 1px solid yellow;
+  background-color: antiquewhite;
 }
 
 .scoreBoard {
@@ -21,12 +38,184 @@
   height: 100px;
 }
 
-.dummy1, .dummy2, .dummy3, .dummy4, .dummy5 {
-  border: 1px solid green;
-  width: 200px;
-  height: 200px;
+
+h2 {
+  padding:5px;
 }
 
-#a {
-  background: url(logo.svg);
+.dummy1, .dummy2, .dummy3, .dummy4, .dummy5, .dummy6, .dummy7, .dummy8, .dummy9, .dummy10, .dummy11, .dummy12, .dummy13, .dummy14  {
+
+  width: 255px;
+  height: 255px;
+  margin: 2px;
+  padding: 0px;
+  border: 1px solid rgb(43, 43, 43)
+}
+
+.dummy1 {
+  background: no-repeat center/100% url(/src/card-images/ork.png);
+}
+#ork {
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 4px;
+  text-align:center;
+  background-color: #87bb0e;
+  margin-bottom: 15px
+  
+}
+.dummy2 {
+  background: no-repeat center/100% url(/src/card-images/space_marine.png);
+}
+#spcMarine {
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 4px;
+  text-align:center;
+  background-color: rgb(23, 58, 213);
+  color: #c6af6b;
+  margin-bottom: 15px
+}
+
+.dummy3 {
+  background: no-repeat center/100% url(/src/card-images/chaosDeamon.png)
+}
+#chaosDeamon{
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 4px;
+  text-align:center;
+  background-color: rgb(118, 7, 7);
+  color: #d7eb65;
+  margin-bottom: 15px
+}
+
+.dummy4 {
+  background: no-repeat center/100% url(/src/card-images/adeptusMech.png)
+}
+#adeptusMechanicus{
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 4px;
+  text-align: center;
+  background-color:#2e8460;
+  color: rgb(123, 6, 6);
+  margin-bottom: 15px;
+  
+}
+
+.dummy5 {
+  background: no-repeat center/100% url(/src/card-images/mechaSkaven.png)
+}
+#ultraSkaven{
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 4px;
+  text-align:center;
+  background-color:#3a5929;
+  color: #8b8588;
+  margin-bottom: 15px
+}
+
+.dummy6 {
+  background: no-repeat center/100% url(/src/card-images/nekronFrontal.png)
+}
+#nekronmancer{
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 4px;
+  text-align:center;
+  background-color:#19434f;
+  color: #5a9b21;
+  margin-bottom: 15px;
+}
+
+.dummy7 {
+  background: no-repeat center/100% url(/src/card-images/caveork.png)
+}
+#caveGoblin{
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 4px;
+  text-align:center;
+  background-color:#667c8d;
+  color: #405403;
+  margin-bottom: 15px;
+}
+
+.dummy8 {
+  background: no-repeat center/100% url(/src/card-images/spacemarine2.png)
+}
+#battleWornSpcMarine{
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 4px;
+  text-align:center;
+  background-color:#1f43d1;
+  color: #73f467;
+  margin-bottom: 15px;
+}
+
+.dummy9 {
+  background: no-repeat center/100% url(/src/card-images/hobgoblin.png)
+}
+#hobbgoblin{
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 4px;
+  text-align:center;
+  background-color:#435968;
+  color: #73f467;
+  margin-bottom: 15px;
+}
+
+.dummy10 {
+  background: no-repeat center/100% url(/src/card-images/nekroSpaceMecha.png)
+}
+#meganecron{
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 4px;
+  text-align:center;
+  background-color:#4e2fdd;
+  color: #73f467;
+  margin-bottom: 15px;
+}
+
+.dummy11 {
+  background: no-repeat center/100% url(/src/card-images/adeptusMech2.png)
+}
+#techomarauder{
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 4px;
+  text-align:center;
+  background-color:#1ba28d;
+  color: #a10309;
+  margin-bottom: 15px;
+}
+
+.dummy12 {
+  background: no-repeat center/100% url(/src/card-images/nekronMachinegun.png)
+}
+#necronatror{
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 4px;
+  text-align:center;
+  background-color:#554e79;
+  color: #b6d15f;
+  margin-bottom: 15px;
+}
+
+.dummy13 {
+  background: no-repeat center/100% url(/src/card-images/skavenWarrior.png)
+}
+#mouserat{
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 4px;
+  text-align:center;
+  background-color:#eedda5;
+  color: #859d34;
+  margin-bottom: 15px;
+}
+
+.dummy14 {
+  background: no-repeat center/100% url(/src/card-images/knight.png)
+}
+#lostknight{
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 4px;
+  text-align:center;
+  background-color:#7492cb;
+  color: #c1c06a;
+  margin-bottom: 15px;
 }
