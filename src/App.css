@@ -1,46 +1,114 @@
-* {
-  margin: 0px;
+@font-face {
+  font-family: pixels;
+  src: url(./fonts/DotGothic16-Regular.ttf)
+}
+@font-face {
+  font-family: mainFont;
+  src: url(./fonts/RobotRenegades-WXwY.ttf)
 }
 
 .App {
   text-align: center;
+  height: 100%;
+  background-color: #070905;
 }
 
-body {
-  background-color: rgb(79, 69, 85);
+html, body, #root {
+  background-color: #070905;
+  margin: 0px;
+  height: 100%;
   
 }
 
 .mainContainer {
+  font-family: mainFont;
   display: flex;
-  justify-content: space-around;
+  justify-content:space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
-  color: rgb(51, 22, 60);
-  border: 2px solid blue;
+  color: rgb(197, 197, 197);
+  background-color:#070905;
+  height: 50%;
+
 }
 
 
 .appHeader {
+  font-family: mainFont;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 5px;
-  border: 1px solid yellow;
-  background-color: antiquewhite;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px;
+  background-color: #070905;
+  height: 125px;
+  margin-bottom: 20px;
+  box-shadow: 0.2em 0.2em 0.6em green;
+  border-bottom: 2px solid #5a9b21;
+  
 }
-
+.dialogContainer {
+  display: flex;
+  width: 350px;
+  margin-left: 0px;
+  margin:0px;
+}
+.speakingHead {
+  background: no-repeat left/103% url(./card-images/nekron.png);
+  width: 135px;
+  height: 135px;
+  border-bottom: #5a9b21;
+  margin:0px;
+  
+}
 .scoreBoard {
-  margin:auto;
-  margin-right: 0px;
-  border: 1px solid red;
-  width: 100px;
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  width: 150px;
   height: 100px;
 }
+.scoreBoardSticky {
+  display: none;
+  align-items: center;
+  color: white;
+  width: 150px;
+  height: 100px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.dialogBox {
+  font-family: pixels;
+  text-align: start;
+  color: rgb(54, 255, 40);
+  margin:0px;
+  margin-left: 5px;
+  margin-top: 5px;
+  left: 150px;
+  width: 250px;
+  height: 125px;
+  font-size: small;
 
+  
+}
 
+h3 {
+  color: whitesmoke;
+}
 h2 {
   padding:5px;
+}
+
+.cardName {
+  width: 261px;
+  height: 300px;
+  text-shadow: 0.1em 0.1em #282626;
+}
+
+.cardName:hover {
+  box-shadow: -0.1em -0.1em 0.5em #5a9b21, 0.1em 0.1em 0.5em #5a9b21;
+  cursor: pointer;
 }
 
 .dummy1, .dummy2, .dummy3, .dummy4, .dummy5, .dummy6, .dummy7, .dummy8, .dummy9, .dummy10, .dummy11, .dummy12, .dummy13, .dummy14  {

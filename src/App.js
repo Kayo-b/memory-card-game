@@ -2,10 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import { randomizer, randomArray } from './auxFunctions';
 import {Cards} from './components/Cards.js';
+import { Dialog } from './components/Dialog.js';
 import React, { useState, useEffect } from 'react';
 
 function App() {
   const [score, setScore] = useState(0);
+  const [topScore, setTopScore] = useState(0);
+  const [count, setCount] = useState(0);
   const [data1, setData1] = useState("")
   const [data2, setData2] = useState("")
   const [data3, setData3] = useState("")
@@ -69,6 +72,10 @@ function App() {
     if(e.target.parentNode.id !== "Selected") {
       setScore(score + 1)
     } else {
+      if(score > topScore) {
+        setTopScore(score)
+      }
+      
       setScore(0)
 
       setData1("")
@@ -91,7 +98,7 @@ function App() {
   var eleArr = 
   [
      <div id="ork" className="cardName"><div id={data1} className="dummy1" onClick={(e) => onClickFunction(e) }><Cards childToParent={childToParent1}/></div><h2>Ork</h2></div>,
-     <div id="spcMarine" className="cardName"><div id={data2} className="dummy2" onClick={(e) => onClickFunction(e) }><Cards childToParent={childToParent2}/></div><h2>Judiciar Ultramarine</h2></div>,
+     <div id="spcMarine" className="cardName"><div id={data2} className="dummy2" onClick={(e) => onClickFunction(e) }><Cards childToParent={childToParent2}/></div><h2>Judiciar</h2></div>,
      <div id="chaosDeamon" className="cardName"><div id={data3} className="dummy3" onClick={(e) => onClickFunction(e) }><Cards childToParent={childToParent3}/></div><h2>Chaos Deamon</h2></div>,
      <div id="adeptusMechanicus" className="cardName"><div id={data4} className="dummy4" onClick={(e) => onClickFunction(e) }><Cards childToParent={childToParent4}/></div><h2>High Technus Zealot</h2></div>,
      <div id="ultraSkaven" className="cardName"><div id={data5} className="dummy5" onClick={(e) => onClickFunction(e) }><Cards childToParent={childToParent5}/></div><h2>Ultra Skaven</h2></div>,
@@ -105,7 +112,7 @@ function App() {
      <div id="mouserat" className="cardName"><div id={data13} className="dummy13" onClick={(e) => onClickFunction(e) }><Cards childToParent={childToParent13}/></div><h2>Mouserat</h2></div>,
      <div id="lostknight" className="cardName"><div id={data14} className="dummy14" onClick={(e) => onClickFunction(e) }><Cards childToParent={childToParent14}/></div><h2>Lost Knight</h2></div>,
   ]
-
+    
 
   let randomizedArray = []
   let random = randomArray()
@@ -119,10 +126,12 @@ function App() {
     {console.log("app rendering")}
 
       <div className="appHeader">
-        <h3>Warhammer AI Memory Card Game</h3>
-      <div className="scoreBoard">{score}</div>
+        <div className="dialogContainer"><div className="speakingHead" ></div><Dialog /></div>
+        <h3>Warhammer 40k Memory Card Game</h3>
+      <div className="scoreBoard">Best Score: {topScore}<br></br>Current Score: {score}</div>
       </div>
       <div className="mainContainer">
+      <div className="scoreBoardSticky">Best Score: {topScore}<br></br>Current Score: {score}</div>
       {randomizedArray}
         
       </div>
