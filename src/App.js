@@ -8,7 +8,7 @@ import React, { useState, useEffect } from 'react';
 function App() {
   const [score, setScore] = useState(0);
   const [topScore, setTopScore] = useState(0);
-  const [count, setCount] = useState(0);
+  const [gameover, setGameover] = useState(false);
   const [data1, setData1] = useState("")
   const [data2, setData2] = useState("")
   const [data3, setData3] = useState("")
@@ -71,10 +71,16 @@ function App() {
     console.log(e.target.parentNode.id)
     if(e.target.parentNode.id !== "Selected") {
       setScore(score + 1)
+      if(score === 13) {
+        setGameover(undefined)
+      }
     } else {
       if(score > topScore) {
         setTopScore(score)
+        
       }
+
+      setGameover(rerenderDialog())
       
       setScore(0)
 
@@ -93,7 +99,21 @@ function App() {
       setData13("")
       setData14("")
     }
+    
+  };
+  
+
+  function rerenderDialog() {
+   
+    if(gameover === false) {
+      return true
+    } else {
+      return false
+    }
+    
+    
   }
+
   
   var eleArr = 
   [
@@ -126,14 +146,14 @@ function App() {
     {console.log("app rendering")}
 
       <div className="appHeader">
-        <div className="dialogContainer"><div className="speakingHead" ></div><Dialog /></div>
+        <div className="dialogContainer"><div className="speakingHead" ></div>{<Dialog gameover={gameover}/>}</div>
         <h3>Warhammer 40k Memory Card Game</h3>
       <div className="scoreBoard">Best Score: {topScore}<br></br>Current Score: {score}</div>
       </div>
       <div className="mainContainer">
       <div className="scoreBoardSticky">Best Score: {topScore}<br></br>Current Score: {score}</div>
       {randomizedArray}
-        
+         {console.log(gameover)}
       </div>
     </div>
   );
