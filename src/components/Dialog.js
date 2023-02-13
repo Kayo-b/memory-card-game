@@ -31,10 +31,7 @@ export function Dialog({gameover, gameover2}) {
                     , 35);
             } 
             else if(gameover === undefined) {
-                setTimeout(() => {
-                        
-                    console.log("gameover render on dialog component")
-                    
+                setTimeout(() => {   
                     setDialog2("")
                     setDialog("")
                     
@@ -54,6 +51,7 @@ export function Dialog({gameover, gameover2}) {
                     setTimeout(() => {
                         setDialog("")
                         setDialog3("")
+                        setCount3(0)
                         
                         if(count2 < gameoverPhrase.length){
                             setDialog2(dialog2 + gameoverPhrase[count2])

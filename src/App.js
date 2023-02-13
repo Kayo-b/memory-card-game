@@ -72,6 +72,7 @@ function App() {
     if(e.target.parentNode.id !== "Selected") {
       setScore(score + 1)
       if(score === 13) {
+        setDataToEmpty()
         setGameover(undefined)
       }
     } else {
@@ -82,26 +83,28 @@ function App() {
 
       setGameover(rerenderDialog())
       
-      setScore(0)
-
-      setData1("")
-      setData2("")
-      setData3("")
-      setData4("")
-      setData5("")
-      setData6("")
-      setData7("")
-      setData8("")
-      setData9("")
-      setData10("")
-      setData11("")
-      setData12("")
-      setData13("")
-      setData14("")
+      setDataToEmpty()
     }
     
   };
   
+  function setDataToEmpty() {
+    setScore(0)
+    setData1("")
+    setData2("")
+    setData3("")
+    setData4("")
+    setData5("")
+    setData6("")
+    setData7("")
+    setData8("")
+    setData9("")
+    setData10("")
+    setData11("")
+    setData12("")
+    setData13("")
+    setData14("")
+  }
 
   function rerenderDialog() {
    
