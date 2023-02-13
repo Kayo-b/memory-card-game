@@ -160,8 +160,3 @@ function App() {
 } 
 
 export default App;
-//what have I learned notes:
-// how to pass values from Parent to Child and from Child back to Parent(creating a callback function in the parent and sending it as a prop to the child and then sending it back to the parent through return)
-// that is really easy to create infinite loops in react.
-// 
-// you can't fix a value to a components state and change the component location inside the parent, the state value stays in the same original place it was originally set.
