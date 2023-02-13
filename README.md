@@ -15,7 +15,7 @@ This was my first project using functional components in React, I tried to creat
 
 kayo-b.github.io/memory-card-game/
 
-![preview](./src/demo_rec2.gif.gif)
+![preview](./src/demo_rec2.gif)
 
 #### Credits
 
