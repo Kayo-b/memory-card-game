@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/memory-card-game/static/css/main.29a76eb4.css",
+    "main.css": "/memory-card-game/static/css/main.3f1b2e7c.css",
     "main.js": "/memory-card-game/static/js/main.06a7686e.js",
     "static/js/787.079dd69e.chunk.js": "/memory-card-game/static/js/787.079dd69e.chunk.js",
     "static/media/DotGothic16-Regular.ttf": "/memory-card-game/static/media/DotGothic16-Regular.7317ef6fed091a7e2f39.ttf",
@@ -21,12 +21,12 @@
     "static/media/nekronFrontal.png": "/memory-card-game/static/media/nekronFrontal.6a12336403f5aea1874d.png",
     "static/media/RobotRenegades-WXwY.ttf": "/memory-card-game/static/media/RobotRenegades-WXwY.23712fa610393c13de67.ttf",
     "index.html": "/memory-card-game/index.html",
-    "main.29a76eb4.css.map": "/memory-card-game/static/css/main.29a76eb4.css.map",
+    "main.3f1b2e7c.css.map": "/memory-card-game/static/css/main.3f1b2e7c.css.map",
     "main.06a7686e.js.map": "/memory-card-game/static/js/main.06a7686e.js.map",
     "787.079dd69e.chunk.js.map": "/memory-card-game/static/js/787.079dd69e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29a76eb4.css",
+    "static/css/main.3f1b2e7c.css",
     "static/js/main.06a7686e.js"
   ]
 }
