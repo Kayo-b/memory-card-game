@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/memory-card-game/static/css/main.707423d0.css",
-    "main.js": "/memory-card-game/static/js/main.4b17cddd.js",
+    "main.js": "/memory-card-game/static/js/main.e94afb3a.js",
     "static/js/787.079dd69e.chunk.js": "/memory-card-game/static/js/787.079dd69e.chunk.js",
     "static/media/DotGothic16-Regular.ttf": "/memory-card-game/static/media/DotGothic16-Regular.7317ef6fed091a7e2f39.ttf",
     "static/media/spacemarine2.png": "/memory-card-game/static/media/spacemarine2.8a3227347516895e0184.png",
@@ -22,11 +22,11 @@
     "static/media/RobotRenegades-WXwY.ttf": "/memory-card-game/static/media/RobotRenegades-WXwY.23712fa610393c13de67.ttf",
     "index.html": "/memory-card-game/index.html",
     "main.707423d0.css.map": "/memory-card-game/static/css/main.707423d0.css.map",
-    "main.4b17cddd.js.map": "/memory-card-game/static/js/main.4b17cddd.js.map",
+    "main.e94afb3a.js.map": "/memory-card-game/static/js/main.e94afb3a.js.map",
     "787.079dd69e.chunk.js.map": "/memory-card-game/static/js/787.079dd69e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.707423d0.css",
-    "static/js/main.4b17cddd.js"
+    "static/js/main.e94afb3a.js"
   ]
 }
