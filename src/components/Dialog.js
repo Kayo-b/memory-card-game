@@ -61,7 +61,7 @@ export function Dialog({gameover, gameover2}) {
                             
                             setCoutGameOver(countGameOver + 1)
                             if(countGameOver > 3) {
-                                console.log(countGameOver)
+                                
                                 setDialog2("")
                                 setCoutGameOver(0)
                                 

@@ -7,7 +7,7 @@
   src: url(./fonts/RobotRenegades-WXwY.ttf)
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .appHeader {
     font-family: mainFont;
     display: flex;
@@ -109,7 +109,7 @@ html, body, #root {
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 480px) {
 
   .mainContainer {
     font-family: mainFont;
