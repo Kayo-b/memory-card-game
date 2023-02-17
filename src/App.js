@@ -23,6 +23,9 @@ function App() {
   const [data13, setData13] = useState("")
   const [data14, setData14] = useState("")
 
+  const changeScoreColor = document.getElementById("score")
+  const changeStikyScoreColor = document.getElementById("scoreSticky")
+
   const childToParent1 = (childData) => {
     setData1(childData)
   }
@@ -82,6 +85,12 @@ function App() {
 
       setGameover(rerenderDialog())
       
+      changeScoreColor.style.color = "red"
+      setTimeout(() => {changeScoreColor.style.color = "white"}, 400)
+
+      changeStikyScoreColor.style.color = "red"
+      setTimeout(() => {changeStikyScoreColor.style.color = "white"}, 400)
+
       setDataToEmpty()
     }
     
@@ -146,10 +155,10 @@ function App() {
       <div className="appHeader">
         <div className="dialogContainer"><div className="speakingHead" ></div>{<Dialog gameover={gameover}/>}</div>
           <h3>Warhammer 40k Memory Card Game</h3>
-        <div className="scoreBoard">Best Score: {topScore}<br></br>Current Score: {score}</div>
+        <div className="scoreBoard" id="score">Best Score: {topScore}<br></br>Current Score: {score}</div>
       </div>
       <div className="mainContainer">
-      <div className="scoreBoardSticky">Best Score: {topScore}<br></br>Current Score: {score}</div>
+      <div className="scoreBoardSticky" id="scoreSticky">Best Score: {topScore}<br></br>Current Score: {score}</div>
       {randomizedArray}
 
       </div>
