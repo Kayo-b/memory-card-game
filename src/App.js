@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import { randomizer, randomArray } from './auxFunctions';
+import { randomArray } from './auxFunctions';
 import {Cards} from './components/Cards.js';
 import { Dialog } from './components/Dialog.js';
 import React, { useState, useEffect } from 'react';
@@ -68,7 +67,7 @@ function App() {
   }
 
   const onClickFunction = (e) => {
-    console.log(e.target.parentNode.id)
+    
     if(e.target.parentNode.id !== "Selected") {
       setScore(score + 1)
       if(score === 13) {
@@ -113,8 +112,6 @@ function App() {
     } else {
       return false
     }
-    
-    
   }
 
   
@@ -146,17 +143,15 @@ function App() {
   return (
     <div className="App">
 
-    {console.log("app rendering")}
-
       <div className="appHeader">
         <div className="dialogContainer"><div className="speakingHead" ></div>{<Dialog gameover={gameover}/>}</div>
-        <h3>Warhammer 40k Memory Card Game</h3>
-      <div className="scoreBoard">Best Score: {topScore}<br></br>Current Score: {score}</div>
+          <h3>Warhammer 40k Memory Card Game</h3>
+        <div className="scoreBoard">Best Score: {topScore}<br></br>Current Score: {score}</div>
       </div>
       <div className="mainContainer">
       <div className="scoreBoardSticky">Best Score: {topScore}<br></br>Current Score: {score}</div>
       {randomizedArray}
-         {console.log(gameover)}
+
       </div>
     </div>
   );

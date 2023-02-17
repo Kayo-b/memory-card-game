@@ -7,6 +7,93 @@
   src: url(./fonts/RobotRenegades-WXwY.ttf)
 }
 
+@media only screen and (max-width: 600px) {
+  .appHeader {
+    font-family: mainFont;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px;
+    background-color: #070905;
+    height: 125px;
+    margin-bottom: 20px;
+    box-shadow: 0.2em 0.2em 0.6em green;
+    border-bottom: 2px solid #5a9b21;
+    
+  }
+
+  h3 {
+    position: absolute;
+    margin-top: 180px;
+    text-shadow: 0.1em 0.1em green;
+  }
+  .dialogContainer {
+    display: flex;
+    width: 330px;
+    margin-right: 0px;
+    margin:-100px;
+ 
+  }
+  .speakingHead {
+    background: no-repeat left/103% url(./card-images/nekron.png);
+    width: 120px;
+    height: 120px;
+    margin-top: 16px;
+    border-bottom: #5a9b21;
+    
+    
+  }
+  .scoreBoard {
+    display: none;
+    align-items: center;
+    color: whitesmoke;
+    width: 150px;
+    height: 100px;
+  }
+  .scoreBoardSticky {
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 150px;
+    height: 100px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    text-shadow: 0.1em 0.1em  #070905;
+  }
+  .dialogBox {
+    font-family: pixels;
+    text-align: start;
+    color: rgb(54, 255, 40);
+    margin:0px;
+    margin-left: 5px;
+    margin-top: 5px;
+    left: 150px;
+    width: 250px;
+    height: 100px;
+    font-size: small
+  
+    
+  }
+
+  .mainContainer {
+    font-family: mainFont;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: rgb(197, 197, 197);
+    background-color:#070905;
+    height: 480vh;
+  
+  }
+
+}
+
+
+
 .App {
   text-align: center;
   height: 100%;
@@ -20,19 +107,21 @@ html, body, #root {
   
 }
 
-.mainContainer {
-  font-family: mainFont;
-  display: flex;
-  justify-content:space-evenly;
-  flex-direction: row;
-  flex-wrap: wrap;
-  color: rgb(197, 197, 197);
-  background-color:#070905;
-  height: 50%;
-
-}
 
 
+@media only screen and (min-width: 600px) {
+
+  .mainContainer {
+    font-family: mainFont;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: rgb(197, 197, 197);
+    background-color:#070905;
+    height: 50%;
+  
+  }
 .appHeader {
   font-family: mainFont;
   display: flex;
@@ -50,8 +139,8 @@ html, body, #root {
 .dialogContainer {
   display: flex;
   width: 350px;
-  margin-left: 0px;
-  margin:0px;
+  margin-right: 0px;
+  margin:-100px;
 }
 .speakingHead {
   background: no-repeat left/103% url(./card-images/nekron.png);
@@ -92,9 +181,11 @@ html, body, #root {
 
   
 }
+}
 
 h3 {
   color: whitesmoke;
+  text-shadow: 0.1em 0.1em green;
 }
 h2 {
   padding:5px;
