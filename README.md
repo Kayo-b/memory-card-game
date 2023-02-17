@@ -21,4 +21,4 @@ The dialog text comming from the terminator head was made using `setTimeout` rer
 #### Credits:
 
 - [Midjourney](https://midjourney.com): for generating the art.
-- [Gameshop](https://www.games-workshop.com): for the Warhammer 40k inspiration.
+- [Games Workshop](https://www.games-workshop.com): for the Warhammer 40k inspiration.
